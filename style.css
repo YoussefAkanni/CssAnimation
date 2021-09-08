@@ -134,34 +134,50 @@ body {
 }
 
 .blue-fish1 img {
-  width: 100px;
+  width: 30px;
   animation: swim 12s linear infinite;
 }
 
 .blue-fish2 img {
-  width: 5vw;
+  width: 24px;
   animation: swim 10s linear infinite;
 }
 
 .blue-fish3 img {
-  width: 3vw;
+  width: 28px;
   animation: swim 11s linear infinite;
 }
 
-.yellow-fish1 img {
-  width: 2vw;
+.pink-fish1 img {
+  width: 20px;
   animation: swim2 18s linear infinite;
 }
 
-.yellow-fish2 img {
-  width: 3vw;
+.pink-fish2 img {
+  width: 25px;
   animation: swim2 20s linear infinite;
 }
 
-.yellow-fish3 img {
-  width: 2vw;
+.pink-fish3 img {
+  width: 30px;
   animation: swim2 16s linear infinite;
 }
+
+.yellow-fish1 img {
+  width: 35px;
+  animation: swim2 16s linear infinite;
+}
+
+.yellow-fish2 img {
+  width: 40px;
+  animation: swim2 18s linear infinite;
+}
+
+.whale img {
+  width: 300px;
+  animation: whale-swim 25s linear infinite;
+}
+
 
 @keyframes swim {
   100% {
@@ -174,7 +190,22 @@ body {
     transform: translateX(calc(100vw));
   }
   100% {
-    transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+
+@keyframes whale-swim {
+  0% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateX(50vw) translateY(-500%);
+  }
+  75% {
+    transform: translateX(75vw) translateY(-350%);
+  }
+  100% {
+    transform: translateX(100vw) translateY(-100%);
   }
 }
 
