@@ -9,8 +9,6 @@ body {
 
 #clouds {
   padding: 100px 0;
-  background: #c9dbe9;
-  background: -webkit-linear-gradient(top, #b7e0ff 0%, #fff 100%);
 }
 .cloud {
   width: 200px;
@@ -77,7 +75,7 @@ body {
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
-  opacity: 0.8; /*opacity proportional to the size*/
+  opacity: 0.8;
 
   -webkit-animation: moveclouds 20s linear infinite;
   -moz-animation: moveclouds 20s linear infinite;
@@ -90,7 +88,7 @@ body {
   -webkit-transform: scale(0.75);
   -moz-transform: scale(0.75);
   transform: scale(0.75);
-  opacity: 0.75; /*opacity proportional to the size*/
+  opacity: 0.75;
 
   -webkit-animation: moveclouds 18s linear infinite;
   -moz-animation: moveclouds 18s linear infinite;
@@ -103,7 +101,7 @@ body {
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
-  opacity: 0.8; /*opacity proportional to the size*/
+  opacity: 0.8;
 
   -webkit-animation: moveclouds 20s linear infinite;
   -moz-animation: moveclouds 20s linear infinite;
@@ -112,7 +110,7 @@ body {
 
 @-webkit-keyframes moveclouds {
   0% {
-    margin-left: 1000px;
+    margin-left: 1500px;
   }
   100% {
     margin-left: -1000px;
@@ -120,7 +118,7 @@ body {
 }
 @-moz-keyframes moveclouds {
   0% {
-    margin-left: 1000px;
+    margin-left: 1500px;
   }
   100% {
     margin-left: -1000px;
@@ -128,7 +126,7 @@ body {
 }
 @-o-keyframes moveclouds {
   0% {
-    margin-left: 1000px;
+    margin-left: 1500px;
   }
   100% {
     margin-left: -1000px;
