@@ -214,7 +214,7 @@ body {
 }
 body {
   background: linear-gradient(to bottom, #4a4969 0%, #7072ab 50%, #cd82a0 100%);
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .ocean {
