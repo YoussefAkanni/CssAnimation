@@ -195,7 +195,7 @@ body {
 
 @keyframes whale-swim {
   0% {
-    transform: translateY(-20%);
+    transform: translateY(-100%);
   }
   50% {
     transform: translateX(50vw) translateY(-500%);
