@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background: linear-gradient(to bottom, #4a4969 0%, #7072ab 50%, #cd82a0 100%);
+  overflow: hidden;
+}
+
+.ocean {
+  height: 25%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: hsl(193, 98%, 22%);
+  opacity: 0.65;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+}
+
+.boat {
+  animation: boat 3s linear infinite;
+  background-repeat: no-repeat;
+  bottom: -170px;
+  height: 600px;
+  left: 18%;
+  position: absolute;
+  width: 250px;
+}
+
+@keyframes boat {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(-3deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+
+<div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    </div>
+<div class="boat" style="background-image: url('https://i.postimg.cc/GmQTRnHD/boat2.png');"></div>
+
