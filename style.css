@@ -132,3 +132,48 @@ body {
     margin-left: -1000px;
   }
 }
+
+.blue-fish1 img {
+  width: 4vw;
+  animation: swim 12s linear infinite;
+}
+
+.blue-fish2 img {
+  width: 5vw;
+  animation: swim 10s linear infinite;
+}
+
+.blue-fish3 img {
+  width: 3vw;
+  animation: swim 11s linear infinite;
+}
+
+.yellow-fish1 img {
+  width: 2vw;
+  animation: swim2 18s linear infinite;
+}
+
+.yellow-fish2 img {
+  width: 3vw;
+  animation: swim2 20s linear infinite;
+}
+
+.yellow-fish3 img {
+  width: 2vw;
+  animation: swim2 16s linear infinite;
+}
+
+@keyframes swim {
+  100% {
+    transform: translateX(calc(100vw));
+  }
+}
+
+@keyframes swim2 {
+  0% {
+    transform: translateX(calc(100vw));
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
