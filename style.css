@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 #clouds {
   padding: 100px 0;
 }
@@ -214,7 +218,7 @@ body {
 .boat {
   animation: boat 3s linear infinite;
   background-repeat: no-repeat;
-  bottom: -183git px;
+  bottom: -183px;
   height: 600px;
   left: 18%;
   position: absolute;
