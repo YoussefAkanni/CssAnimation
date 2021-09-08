@@ -199,9 +199,12 @@ body {
     transform: translateY(-20%);
   }
   50% {
-    transform: translateX(calc(50vw)) translateY(-500%);
+    transform: translateX(50vw) translateY(-500%);
+  }
+  75% {
+    transform: translateX(75vw) translateY(-350%);
   }
   100% {
-    transform: translateX(calc(100vw)) translateY(-100%);
+    transform: translateX(100vw) translateY(-100%);
   }
 }
